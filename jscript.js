@@ -4,9 +4,9 @@ function getComputerChoice(choice){
     return choice[Math.floor(Math.random() * choice.length)];
 
 }
-console.log(getComputerChoice(choice));
 
 function playRound(playerSelection, computerSelection){
+    console.log(playerSelection, computerSelection);
 if (playerSelection===computerSelection){
     return "It's a tie!";
 }
@@ -25,6 +25,9 @@ else {
 
 }
 const playerSelection =prompt("Pick yours").toLowerCase();
-const computerSelection = getComputerChoice(choice)
-console.log(playRound(playerSelection,computerSelection))
+const computerSelection = getComputerChoice(choice);
+console.log(playRound(playerSelection,computerSelection));
 
+function playGame(){
+playRound();
+}
