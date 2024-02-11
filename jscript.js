@@ -6,3 +6,5 @@ function getComputerChoice(choice){
 console.log(randomChoice); 
 }
 
+const playerSelection = document.querySelector('userchoice');
+
